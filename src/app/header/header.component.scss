@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  width: 70%;
+  border-radius: 50px;
+  color: #4658a7;
+  font-size: 17px;
+  margin: 20px;
+  justify-content: space-around;
+  backdrop-filter: saturate(200%) blur(30px);
+  background-color: hsla(0,0%,100%,.8)!important;
+  position: absolute;
+  z-index: 1;
+  >:first-child {
+    font-weight: bold;
+  }
+}
+
+ul {
+  >:first-child {
+    margin-right: 70px;
+  }
+}
+
+

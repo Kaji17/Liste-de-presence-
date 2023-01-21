@@ -1,0 +1,26 @@
+.mask {
+  position: absolute;
+  background-size: cover;
+  background-position: 50%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .8;
+}
+
+.bg {
+  background-image: url("../assets/cover-image.jpg");
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-position: 50%;
+  display: flex;
+  min-height: 697px;
+}
+.bg-gradient-primary {
+  background-image: linear-gradient(310deg,#7928ca,#ff0080);
+}
