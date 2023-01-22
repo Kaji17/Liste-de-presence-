@@ -74,4 +74,9 @@ form {
   }
 }
 
-@media screen and (max-width :877px) {}
+@media screen and (max-width :685px) {
+  .main{
+    width: 95%;
+    height: 70%;
+  }
+}
