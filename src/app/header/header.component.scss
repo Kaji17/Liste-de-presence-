@@ -1,3 +1,4 @@
+
 header {
   display: flex;
   justify-content: center;
@@ -18,12 +19,22 @@ nav {
   >:first-child {
     font-weight: bold;
   }
+  >span{
+    cursor: pointer;
+  }
 }
 
 ul {
   >:first-child {
     margin-right: 70px;
   }
+  >li{
+    cursor: pointer
+  }
 }
 
-
+.active{
+  color: #CE0033;
+  font-size: 20px;
+  background-color: transparent
+}

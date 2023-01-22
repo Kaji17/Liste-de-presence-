@@ -1,7 +1,8 @@
-export class Etudiant{
-  id!: number;
-    nom!: string;
-    prenom!: string;
-    numeroTel!: string;
-    email!: string
+export class Etudiant {
+  id!: string;
+  nom!: string;
+  prenom!: string;
+  numeroTel!: string;
+  email!: string;
+  date!: Date
 }

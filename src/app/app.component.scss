@@ -1,3 +1,7 @@
+section {
+  display: flex;
+  justify-content: center;
+}
 .mask {
   position: absolute;
   background-size: cover;
@@ -10,17 +14,16 @@
 }
 
 .bg {
-  background-image: url("../assets/cover-image.jpg");
+  background-image: url("../assets/cover-image1.jpg");
   padding: 0;
   position: relative;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
   background-size: cover;
   background-position: 50%;
-  display: flex;
   min-height: 697px;
 }
 .bg-gradient-primary {
   background-image: linear-gradient(310deg,#7928ca,#ff0080);
 }
+
+

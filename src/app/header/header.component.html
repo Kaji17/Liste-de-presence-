@@ -1,14 +1,13 @@
 <header>
   <nav>
-    <span>Sinplon Côte d'Ivoire</span>
+    <span [routerLink]="['']">Sinplon Côte d'Ivoire</span>
     <ul>
-      <li>
-        <span>Enregistrer particpant</span>
+      <li routerLinkActive="active">
+        <span [routerLink]="['/inscription']">Enregistrer particpant</span>
       </li>
-      <li>
-        <span>Liste des participants</span>
+      <li routerLinkActive="active">
+        <span [routerLink]="['/list-etudiant']">Liste des participants</span>
       </li>
     </ul>
   </nav>
- 
 </header>

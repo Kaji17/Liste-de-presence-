@@ -1,1 +1,31 @@
-<p>list-etudiant works!</p>
+<div class="main">
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Nom</th>
+        <th>Prénoms</th>
+        <th>Numéro téléphone</th>
+        <th>Email</th>
+        <th>Date</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let etudiant of Etudiants ; let i = index ">
+        <th scope="row">{{ i+1 }}</th>
+        <td>{{ etudiant.nom | titlecase }}</td>
+        <td>{{ etudiant.prenom | titlecase}}</td>
+        <td>{{ etudiant.numeroTel }}</td>
+        <td>{{ etudiant.email | lowercase}}</td>
+        <td>{{ etudiant.date | date: 'medium'}}</td>
+        <td>
+          <span (click)="removeEtudiant(etudiant)" class="btn-delete">Delete</span>
+        </td>
+      </tr>
+    </tbody>
+   
+  </table>
+  
+
+</div>

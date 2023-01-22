@@ -1,5 +1,7 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { registerLocaleData } from '@angular/common';
+import * as fr from '@angular/common/locales/fr'
 
 // Module Firestore
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore/';
@@ -11,7 +13,7 @@ import { AppComponent } from './app.component';
 import { ListEtudiantComponent } from './list-etudiant/list-etudiant.component';
 import { EtudiantComponent } from './etudiant/etudiant.component';
 import { HeaderComponent } from './header/header.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { environment } from 'src/environments/environment';
 import { EtudiantService } from './shared/services/Etudiant.service';
 
@@ -27,9 +29,16 @@ import { EtudiantService } from './shared/services/Etudiant.service';
     ReactiveFormsModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+
+    FormsModule
   ],
-  providers: [EtudiantService],
+  providers: [EtudiantService, {provide: LOCALE_ID, useValue: 'fr-Fr'}],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  contructor(){
+    registerLocaleData(fr.default)
+  }
+ }
+
