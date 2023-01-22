@@ -1,27 +1,26 @@
 # ListePresence
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
+Ce projet a été généré avec [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
-## Development server
+## Screenshoot
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![Capture web_22-1-2023_2066_listedepresence-d1005 web app](https://user-images.githubusercontent.com/112895450/213937850-2da0800b-8c37-420e-91fc-d1dc8705c926.jpeg)
 
-## Code scaffolding
+![Capture web_22-1-2023_20657_listedepresence-d1005 web app](https://user-images.githubusercontent.com/112895450/213937859-8956c3d5-7933-4602-be14-8b0b0634967d.jpeg)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Description
 
-## Build
+ListePresence est une application web répondant au besoin de créer une liste d'émargement numérique facilitant ainsi le travail de la rétrencription des informations dans un fichier excel en effet *ListePresence* va enregistrer et stocker les informations des différents participant dans une Base de donée *FireBase* qui pourra être exporter par la suite 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Solutions 
+[ListePresence](https://listedepresence-d1005.web.app)
 
-## Running unit tests
+## Auteur
+Ouattara Katina Pê Virgile
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- GitHub: @Kaji17
+- Twitter: @pevirgile
+- Linkedin: [Katina Pê Virgile Ouattara](https://www.linkedin.com/in/katina-p%C3%AA-virgile-ouattara-62289a203/)
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Run server
+Après avoir cloner le projet sur la machine Effectuer la commande `ng serve`
