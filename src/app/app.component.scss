@@ -25,5 +25,8 @@ section {
 .bg-gradient-primary {
   background-image: linear-gradient(310deg,#7928ca,#ff0080);
 }
-
+app-header{
+  display: flex;
+  justify-content: center;
+}
 

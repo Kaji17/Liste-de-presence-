@@ -1,26 +1,35 @@
 <div class="main">
   <div class="main-content">
     <div class="title">
-      <span >S'inscrire sur la liste </span>
+      <span>S'inscrire sur la liste </span>
+      <div class="icon-ajouter" [routerLink]="['/list-etudiant']">
+        Consulter liste
+        <span class="material-icons icon">
+          list_alt
+        </span>
+      </div>
     </div>
 
     <form [formGroup]="etudiantForm" (ngSubmit)="onSubmit()">
       <label for="nomParticipant">Nom</label>
-      <input autocomplete="off" type="text" formControlName="nom" id="nomParticipant" placeholder="Nom" required >
+      <input autocomplete="off" type="text" formControlName="nom" id="nomParticipant" placeholder="Nom" required>
 
       <label for="prenomParticipant">Prénoms</label>
-      <input autocomplete="off" type="text" formControlName="prenom" id="prenomParticipant" placeholder="Prénom" required >
-      
+      <input autocomplete="off" type="text" formControlName="prenom" id="prenomParticipant" placeholder="Prénom"
+        required>
+
       <label for="numeroParticipant">Numéro de téléphone</label>
-      <input autocomplete="off" type="text" formControlName="numeroTel" id="numeroParticipant" placeholder="ex: 0102030405" required >
+      <input autocomplete="off" type="text" formControlName="numeroTel" id="numeroParticipant"
+        placeholder="ex: 0102030405" required>
 
       <label for="emailParticipant">Adresse email</label>
-      <input autocomplete="off" type="email" formControlName="email" id="emailParticipant" placeholder="ex: azx@mail.com" required>
+      <input autocomplete="off" type="email" formControlName="email" id="emailParticipant"
+        placeholder="ex: azx@mail.com" required>
 
       <div>
-        <button type="submit">S'enregistrer</button>
+        <button type="submit">Enregistrer</button>
       </div>
     </form>
-  
+
   </div>
 </div>

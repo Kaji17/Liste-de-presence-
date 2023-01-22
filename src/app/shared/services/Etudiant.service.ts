@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { AngularFirestore } from "@angular/fire/compat/firestore";
 import { FormControl, FormGroup, Validators } from "@angular/forms";
-import { Etudiant } from "../model/etudiant";
+import { Etudiant } from "./model/etudiant";
 
 @Injectable({
   providedIn: "root"

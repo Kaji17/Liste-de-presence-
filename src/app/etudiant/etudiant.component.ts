@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { EtudiantService } from '../shared/services/Etudiant.service';
+import { Etudiant } from '../shared/services/model/etudiant';
 
 @Component({
   selector: 'app-etudiant',
@@ -11,6 +12,7 @@ import { EtudiantService } from '../shared/services/Etudiant.service';
 export class EtudiantComponent implements OnInit {
 
   public etudiantForm: any;
+  public Etudiants!: Etudiant[] ;
 
   constructor(
     public etudiantService : EtudiantService,
@@ -21,9 +23,7 @@ export class EtudiantComponent implements OnInit {
       nom : [''],
       prenom: [''],
       numeroTel: [''],
-      email: [''],
-      date: [new Date()]
-      
+      email: [''],  
     })
   }
 
@@ -32,6 +32,14 @@ export class EtudiantComponent implements OnInit {
 
   onSubmit(){
     this.etudiantService.createEtudiant(this.etudiantForm.value);
+    this.etudiantService.getListEtudiants().subscribe(res => {
+      this.Etudiants = res.map(e =>{
+        return{
+          id: e.payload.doc.id,
+          ...e.payload.doc.data() as{}
+        }as Etudiant
+      })
+    })
     this.router.navigate(['list-etudiant'])
   }
 }

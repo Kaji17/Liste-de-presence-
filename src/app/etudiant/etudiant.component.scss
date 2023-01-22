@@ -1,6 +1,6 @@
 .main {
-  width: 593px;
-  height: 436px;
+  width: 59%;
+  height: 69%;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -23,7 +23,26 @@
     padding-top: 10px;
     font-size: 25px;
     font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+
+    >.icon-ajouter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      font-size: 12px;
+      background-color: #CE0033;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+      box-sizing: border-box;
+      backdrop-filter: saturate(200%) blur(30px);
+      border: 1px solid #000000;
+      box-shadow: -7px 9px 14px rgba(0, 0, 0, 0.25);
+    }
   }
+
 }
 
 form {
@@ -46,6 +65,13 @@ form {
       padding-top: 4px;
       padding-bottom: 4px;
       margin-top: 5px;
+      cursor: pointer;
+      box-sizing: border-box;
+      backdrop-filter: saturate(200%) blur(30px);
+      border: 1px solid #000000;
+      box-shadow: -7px 9px 14px rgba(0, 0, 0, 0.25);
     }
   }
 }
+
+@media screen and (max-width :877px) {}

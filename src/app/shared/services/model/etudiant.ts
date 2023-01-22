@@ -4,5 +4,4 @@ export class Etudiant {
   prenom!: string;
   numeroTel!: string;
   email!: string;
-  date!: Date
 }

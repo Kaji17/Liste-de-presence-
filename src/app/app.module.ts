@@ -12,7 +12,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListEtudiantComponent } from './list-etudiant/list-etudiant.component';
 import { EtudiantComponent } from './etudiant/etudiant.component';
-import { HeaderComponent } from './header/header.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { environment } from 'src/environments/environment';
 import { EtudiantService } from './shared/services/Etudiant.service';
@@ -22,7 +21,7 @@ import { EtudiantService } from './shared/services/Etudiant.service';
     AppComponent,
     ListEtudiantComponent,
     EtudiantComponent,
-    HeaderComponent
+
   ],
   imports: [
     BrowserModule,
